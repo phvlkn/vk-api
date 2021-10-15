@@ -11,5 +11,5 @@ $params = http_build_query([
 $url = "https://api.vk.com/method/{$method}?{$params}&access_token={$token}&v={$version}";
 $result = json_decode(file_get_contents($url), true);
 $orders = $result['response']['items'];
-print_r($result);
+print_r($orders);
 ?>
