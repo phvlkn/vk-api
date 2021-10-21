@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>VKapi</title>
+    <style>
+    p {
+        color: rgb(0, 0, 0);
+        font-size: 17px;
+    }
+    .dr {
+        font-style: italic;
+    }
+    .df {
+        color: rgb(99, 230, 48);
+    }
+    .fg{
+        color: red;
+    }
+    td {
+        font-size: 20px;
+    }
+    th {
+        font-size: 25px;
+    }
+    body {
+        background: url(h.jpg) no-repeat;
+        -moz-background-size: 100%; /* Firefox 3.6+ */
+        -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 100%; /* Opera 9.6+ */
+        background-size: 100%; /* Современные браузеры */
+    }
+    h2 {
+        color:rgb(0, 0, 0);
+    }
+    caption {
+        color:rgb(99, 230, 48);
+        font-size: 40px;
+    }
+    .hj {
+        font-size: 30px;
+        color: blueviolet;
+    }
+    input[type=text]{
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(150, 163, 173));
+    }
+    input[type="text"]{
+        color: rgb(255, 255, 255);
+    }
+    </style>
 </head>
 <body>
-
-
     <h2>удалить беседу</h2>
     <form action="conversationdel.php" method="post">
         <p>токен: <input type="text" name="tkn" /></p>
@@ -43,12 +87,46 @@
         <p>человек(по умолчанию — <br>текущий пользователь)/паблик(-): <input type="text" name="id"></p>
         <p><input type="submit"></p>
     </form>
-    
+
     <br>
-    <p>токен информатички</p>
-    <p>eae8ad41f020402f0f964b166edf8e6e9f85d544e631e36e4c80190ce98f680fec06eab9a9acb96f808bb</p>
-    <br><br>
-    <p>токен той рандомки</p>
-    <p>07f1415ab39c3f2df764d441bab8137cc7635fbc90b9d62cfe08f5c9f05e2b5dee8a71f02a250f44c56de</p>
+    <p class="hj"><a href="https://vkserv.ru/api/inst/get-messages">VKSerf</a></p>
+    <br>
+    <br>
+    <table border="1">
+        <caption>База данных</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>id</th>
+                <th>Токен</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="dr">Информатичка</td>
+                <td>550511861</td>
+                <td class="df">eae8ad41f020402f0f964b166edf8e6e9f85d544e631e36e4c80190ce98f680fec06eab9a9acb96f808bb</td>
+            </tr>
+            <tr>
+                <td class="dr">Гоша 1 ак</td>
+                <td>539286079</td>
+                <td class="df">3619d19ab7c850d2cd24407170f82ce44ecc3a233209f3399a6a2e8d703b63e50769563dc2632a00b2a8a</td>
+            </tr>
+            <tr>
+                <td class="dr">Гоша 2 ак основа</td>
+                <td>576360243</td>
+                <td class="df">58b198c7fcfae2cde576e77568cb69913e72a7864e9d79feabbfee49f5689261973957c90b603b0a0164b</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="dr">та рандомка</td>
+                <td>146617368</td>
+                <td class="df">07f1415ab39c3f2df764d441bab8137cc7635fbc90b9d62cfe08f5c9f05e2b5dee8a71f02a250f44c56de</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <p class="fg">Мой id 533931113</p>
 </body>
 </html>
