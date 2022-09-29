@@ -1,43 +1,59 @@
 p {
-    color: rgb(255, 255, 255);
-    font-size: 17px;
+    color: rgb(0, 255, 255);
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(12, 17, 59);
 }
 .dr {
     font-style: italic;
+    color:rgb(255, 255, 255);
+}
+.op2 {
+    color:rgb(0, 255, 255);
+}
+.op1 {
+    color:rgb(255, 255, 255);
 }
 .df {
-    color: rgb(99, 230, 48);
+    color:rgb(0, 255, 255);
 }
 .fg{
-    color: red;
+    color: rgb(0, 255, 255);
 }
 td {
     font-size: 20px;
+    background-color: rgb(75, 0, 130);
+}
+.ty {
+    font-size: 30px;
 }
 th {
     font-size: 25px;
+    background-color: rgb(75, 0, 130);
+    color: rgb(255, 255, 255);
 }
 body {
-    background: url(h.jpg) no-repeat;
+    background: url(h.jpg) repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
 }
 h2 {
-    color:rgb(255, 255, 255);
+    color:rgb(0, 255, 255);
+    text-shadow: 2px 2px 2px rgb(75, 0, 130);
 }
 caption {
-    color:rgb(99, 230, 48);
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(75, 0, 130);
     font-size: 40px;
 }
 .hj {
-    font-size: 30px;
+    font-size: 50px;
     color: blueviolet;
 }
 input[type=text]{
-    background: linear-gradient(to right, rgb(135, 226, 214), rgb(255, 255, 255));
+    background: linear-gradient(to right, rgb(75, 0, 130), rgb(0, 255, 255));
 }
 input[type="text"]{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 255, 255);
 }

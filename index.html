@@ -8,7 +8,7 @@
     <title>VKapi</title>
 </head>
 <body>
-    <h2>удалить беседу</h2>
+    <h2>-Удалить беседу-</h2>
     <form action="conversationdel.php" method="post">
         <p>токен: <input type="text" name="tkn" /></p>
         <p>айди собеседника: <input type="text" name="id" /></p>
@@ -17,7 +17,7 @@
     <br>
     
     
-    <h2>отправить сообщение</h2>
+    <h2>-Отправить сообщение-</h2>
     <form action="sendmessage.php" method="post">
         <p>токен: <input type="text" name="tkn" /></p>
         <p>айди собеседника: <input type="text" name="id" /></p>
@@ -27,28 +27,37 @@
     </form>
     <br>
     
-    <h2>показать переписку</h2>
+    <h2>-Показать переписку-</h2>
     <form action="showconversation.php" method="post">
         <p>токен: <input type="text" name="tkn" /></p>
         <p>айди: <input type="text" name="id" /></p>
         <p>введите 0: <input type="text" name="soonum" /></p>
-        <p><input type="submit" /></p>
+        <p class="v"><input type="submit" /></p>
     </form>
     <br>
     
-    <h2>показать стену</h2>
+    <h2>-Показать стену-</h2>
     <form action="wallget.php" method="post">
         <p>токен: <input type="text" name="tkn"></p>
         <p>человек(по умолчанию — <br>текущий пользователь)/паблик(-): <input type="text" name="id"></p>
         <p><input type="submit"></p>
     </form>
+    <br>
+
+    <h2>Опубликовать запись</h2>
+    <form action="wallPost.php" method="post">
+        <p>токен: <input type="text" name="tkn"></p>
+        <p>только для друзей(0) <input type="text" name="friends"></p>
+        <p>текст сообщения: <input type="text" name="message"></p>
+        <p>вложения(необязательно, если текст): <input type="text" name="attachments"></p>
+    </form>
 
     <br>
-    <p class="hj"><a href="https://vkserv.ru/api/inst/get-messages">VKSerf</a></p>
+    <p class="hj"><a href="https://vkserv.ru/api/inst/get-messages">VKServ</a></p>
     <br>
-    <br>
+
     <table border="1">
-        <caption>База данных</caption>
+        <caption>-База данных-</caption>
         <thead>
             <tr>
                 <th>Name</th>
@@ -58,28 +67,104 @@
         </thead>
         <tbody>
             <tr>
-                <td class="dr">Информатичка</td>
-                <td>550511861</td>
-                <td class="df">eae8ad41f020402f0f964b166edf8e6e9f85d544e631e36e4c80190ce98f680fec06eab9a9acb96f808bb</td>
+                <td class="dr"> Информатичка </td>
+                <td class="dr"> 550511861 </td>
+                <td class="df"> eae8ad41f020402f0f964b166edf8e6e9f85d544e631e36e4c80190ce98f680fec06eab9a9acb96f808bb </td>
             </tr>
             <tr>
-                <td class="dr">Гоша 1 ак</td>
-                <td>539286079</td>
-                <td class="df">3619d19ab7c850d2cd24407170f82ce44ecc3a233209f3399a6a2e8d703b63e50769563dc2632a00b2a8a</td>
+                <td class="dr"> Гоша 1 ак </td>
+                <td class="dr"> 539286079 </td>
+                <td class="df"> 3619d19ab7c850d2cd24407170f82ce44ecc3a233209f3399a6a2e8d703b63e50769563dc2632a00b2a8a </td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td class="dr">МоТеМоТиЧкА</td>
-                <td>6628611</td>
-                <td class="df">4115cf849f5e5a7d367d83d00aa7a228c6d0f106a84dc9ce9dc13b88cce192f20515289e67b57a5276b5e</td>
+                <td class="dr"> МоТеМоТиЧкА </td>
+                <td class="dr"> 6628611 </td>
+                <td class="df"> 4115cf849f5e5a7d367d83d00aa7a228c6d0f106a84dc9ce9dc13b88cce192f20515289e67b57a5276b5e </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <caption>-Cкрепыши-</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>id</th>
+                <th>---</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="dr"> 😈Гений😈 </td>
+                <td class="dr"> 583854044 </td>
+                <td><img src="гений.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 🤓Зубодробилка🤓 </td>
+                <td class="dr"> 387170740 </td>
+                <td><img src="губкабоб.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 🤡Толчковый ершик🤡 </td>
+                <td class="dr"> 576360243 </td>
+                <td><img src="гоша 2 ак.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 🛁Шмакоебик🛁 </td>
+                <td class="dr"> 302709403 </td>
+                <td><img src="изюмка.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 🥵Дискошар🥵 </td>
+                <td class="dr"> 54424311 </td>
+                <td><img src="чебурашка.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 💊АбАмУс💊 </td>
+                <td class="dr"> 635909918 </td>
+                <td><img src="ахахаххаха.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 🦠Немка🦠 </td>
+                <td class="dr"> 137333589 </td>
+                <td><img src="гутен таг.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 👀Страпон👀 </td>
+                <td class="dr"> 543400463 </td>
+                <td><img src="даун.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> /СпавнГоши/ </td>
+                <td class="dr"> 158571511 </td>
+                <td><img src="милфа.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 🤢Еблан_просто🤢 </td>
+                <td class="dr"> 484513899 </td>
+                <td><img src="шкляев.png" alt=""></td>
+            </tr>
+            <tr>
+                <td class="dr"> 🥶Недоказал🥶 </td>
+                <td class="dr"> 445747229 </td>
+                <td><img src="назаров.png" alt=""></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="dr"> 🖕🏻Галина🖕🏻 </td>
+                <td class="dr"> 222115878 </td>
+                <td><img src="гс.png" alt=""></td>
             </tr>
         </tfoot>
     </table>
     <br>
-    <p class="fg">Мой id 533931113</p>
-    <br>
     <a class="ty" href="https://onlineftp.ch">тык</a>
+    <br>
     <table border="1">
         <thead>
             <th class="op1">Host</th>
@@ -89,10 +174,11 @@
         </thead>
         <tfoot>
             <td class="op2">ftpupload.net</td>
-            <td class="op2">epiz_30058439</td>
-            <td class="op2">K4Z4ohRCI56KtDC</td>
+            <td class="op2">epiz_32588864</td>
+            <td class="op2">Er51u4dhAO7</td>
             <td class="op2">21</td>
         </tfoot>
     </table>
+
 </body>
 </html>
