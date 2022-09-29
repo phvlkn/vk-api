@@ -7,7 +7,8 @@ $params = http_build_query([
     'owner_id' => $_POST['id'],
     'friends_only' => $_POST['friends'],
     'message' => $_POST['message'],
-    'attachments' => $_POST['attachments']
+    'attachments' => $_POST['attachments'],
+    'guid' => $_POST['guid']
 ]);
 
 $url = "https://api.vk.com/method/{$method}?{$params}&access_token={$token}&v={$version}";
