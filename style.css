@@ -1,5 +1,5 @@
 p {
-    color: rgb(0, 255, 255);
+    color: rgb(167, 241, 47);
     font-size: 20px;
     text-shadow: 2px 2px 2px rgb(12, 17, 59);
 }
@@ -8,27 +8,27 @@ p {
     color:rgb(255, 255, 255);
 }
 .op2 {
-    color:rgb(0, 255, 255);
+    color:rgb(167, 241, 47);
 }
 .op1 {
     color:rgb(255, 255, 255);
 }
 .df {
-    color:rgb(0, 255, 255);
+    color:rgb(167, 241, 47);
 }
 .fg{
-    color: rgb(0, 255, 255);
+    color: rgb(167, 241, 47);
 }
 td {
     font-size: 20px;
-    background-color: rgb(75, 0, 130);
+    background-color: rgb(228, 157, 91);
 }
 .ty {
     font-size: 30px;
 }
 th {
     font-size: 25px;
-    background-color: rgb(75, 0, 130);
+    background-color: rgb(228, 157, 91);
     color: rgb(255, 255, 255);
 }
 body {
@@ -39,12 +39,12 @@ body {
     background-size: 100%; /* Современные браузеры */
 }
 h2 {
-    color:rgb(0, 255, 255);
-    text-shadow: 2px 2px 2px rgb(75, 0, 130);
+    color:rgb(167, 241, 47);
+    text-shadow: 2px 2px 2px rgb(228, 157, 91);
 }
 caption {
     color:rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px rgb(75, 0, 130);
+    text-shadow: 2px 2px 2px rgb(228, 157, 91);
     font-size: 40px;
 }
 .hj {
@@ -52,8 +52,8 @@ caption {
     color: blueviolet;
 }
 input[type=text]{
-    background: linear-gradient(to right, rgb(75, 0, 130), rgb(0, 255, 255));
+    background: linear-gradient(to right, rgb(228, 157, 91), rgb(167, 241, 47));
 }
 input[type="text"]{
-    color: rgb(0, 255, 255);
+    color: rgb(167, 241, 47);
 }
